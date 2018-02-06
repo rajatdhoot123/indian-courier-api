@@ -1,0 +1,21 @@
+{
+  "name": "indian-courier-api",
+  "version": "1.0.0",
+  "description": "API to track status of parcel.",
+  "main": "index.js",
+  "repository": "https://github.com/rajatdhoot123/indian-courier-api.git",
+  "author": "Rajat Dhoot",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  }
+}
