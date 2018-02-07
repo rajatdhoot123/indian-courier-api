@@ -9,6 +9,7 @@ app.use(bodyParser.json());
 
 let ecom = require('./api/ecomexpress.js');
 let ekart = require('./api/ekart.js');
+let delhivery = require('./api/delhivery.js');
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
@@ -22,6 +23,7 @@ app.use((req, res, next) => {
 
 app.use('/ecom-express', ecom)
 app.use('/ekart', ekart)
+app.use('/delhivery', delhivery)
 
 app.use((req, res, next) => {
     const error = new Error('Not Found')

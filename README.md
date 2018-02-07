@@ -9,10 +9,11 @@ You can use this project to build your courier tracking app as it return the res
 
 #### Current Supported Courier service and their endpoints
 
-| Service Providers | Api EndPoints                      |
-| :---              |     :---:                          |
-| Ekart             | localhost:5050/ekart/${TrackingId} |
-| Ecom              | localhost:5050/ecom/${TrackingId}  | 
+| Service Providers    | Api EndPoints                           |
+| :---                 |     :---:                               |
+| Ekart                | localhost:5050/ekart/${TrackingId}      |
+| Ecom                 | localhost:5050/ecom/${TrackingId}       | 
+| Delhivery            | localhost:5050/delhivery/${TrackingId}  | 
 
 Tip: Directly insert tracking id in api end point instead of ${TrackingId}
 
