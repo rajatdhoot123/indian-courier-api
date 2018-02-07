@@ -12,7 +12,7 @@ router.get('/:awb', (req, res) => {
                 result: temp
             })  
         } else {
-            let jsonObject = JSON.parse(temp.substring(1,temp.length - 2));
+            let jsonObject = JSON.parse(temp.substring(1,temp.length - 2)); 
             res.json({
                 result: jsonObject
             })
