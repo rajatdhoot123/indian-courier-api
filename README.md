@@ -29,6 +29,7 @@ And then you will get Json Object with all tracking Details
 | Ekart                | localhost:5050/ekart/${TrackingId}      |
 | Ecom                 | localhost:5050/ecom/${TrackingId}       | 
 | Delhivery            | localhost:5050/delhivery/${TrackingId}  | 
+| Xpressbees           | localhost:5050/xpressbees/${TrackingId} | 
 
 Tip: Directly insert tracking id in api end point instead of ${TrackingId}
 

@@ -6,7 +6,6 @@ let url = 'https://www.ekartlogistics.com/track/';
 
 router.get('/:awb', (req, res) => {
     let trackingId = req.params.awb
-    console.l
     tabletojson.convertUrl(url + trackingId)
         .then(tablesAsJson => 
         {   
