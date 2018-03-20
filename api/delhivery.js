@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const axios = require('axios')
-const FormData = require('form-data');
-
 
 router.get('/:awb', (req, res) => {
     let trackingId = req.params.awb

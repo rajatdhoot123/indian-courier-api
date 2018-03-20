@@ -12,6 +12,8 @@
     "express": "^4.16.2",
     "form-data": "^2.3.2",
     "morgan": "^1.9.0",
+    "querystring": "^0.2.0",
+    "request": "^2.85.0",
     "tabletojson": "git+https://github.com/iaincollins/tabletojson.git"
   },
   "devDependencies": {

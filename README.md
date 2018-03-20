@@ -24,12 +24,15 @@ And then you will get Json Object with all tracking Details
 
 #### Current Supported Courier service and their endpoints
 
+###### Get Request
+
 | Service Providers    | Api EndPoints                           |
 | :---                 |     :---:                               |
 | Ekart                | localhost:5050/ekart/${TrackingId}      |
 | Ecom                 | localhost:5050/ecom/${TrackingId}       | 
 | Delhivery            | localhost:5050/delhivery/${TrackingId}  | 
 | Xpressbees           | localhost:5050/xpressbees/${TrackingId} | 
+| Bluedart             | localhost:5050/bluedart/${TrackingId}   | 
 
 Tip: Directly insert tracking id in api end point instead of ${TrackingId}
 
