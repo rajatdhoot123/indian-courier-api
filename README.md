@@ -36,4 +36,19 @@ And then you will get Json Object with all tracking Details
 
 Tip: Directly insert tracking id in api end point instead of ${TrackingId}
 
-### Currently work in progress hance used localhost soon deploy somewhere
+### Deployed on Heroku
+
+Now you can use directly heroku end point and get the tracking details as json response
+
+courier_provider = ekart | ecom | delhivery | xpressbees | bluedart
+
+trackingId = Your Parcel Tracking id like-> FMPC0279658213
+
+https://desolate-retreat-95865.herokuapp.com/{courier_provider}/{trackingId}
+
+Replace courier_provider and trackingId in above api to get your tracking json response
+
+Example ->
+
+https://desolate-retreat-95865.herokuapp.com/ekart/FMPC0279658213
+
