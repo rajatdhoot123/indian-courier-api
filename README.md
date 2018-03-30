@@ -36,6 +36,20 @@ And then you will get Json Object with all tracking Details
 
 Tip: Directly insert tracking id in api end point instead of ${TrackingId}
 
+###### API Respone Format
+
+If your request is successfull then response will contain three keys i.e. location, detail, date.
+Check the example below.
+
+Example
+```
+    {
+        "location": "BENGALURU",
+        "detail": "Shipment delivered",
+        "date": "26 Mar, 2018 12:50 hrs"
+    },
+```
+
 ### Deployed on Heroku
 
 Now you can use directly heroku end point and get the tracking details as json response
@@ -51,4 +65,3 @@ Replace courier_provider and trackingId in above api to get your tracking json r
 Example ->
 
 https://desolate-retreat-95865.herokuapp.com/ekart/FMPC0279658213
-

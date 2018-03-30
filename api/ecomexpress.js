@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const axios = require('axios')
-
+const axios = require('axios');
+//reduce((acc, current) => [...acc, { location: current.scannedLocation, detail: current.instructions, date: `${current.scanDateTime}` }],[]);
 router.get('/:awb', (req, res) => {
     let trackingId = req.params.awb
     axios.get(`https://ecomexpress.in/tracking/?awb_field=${trackingId}`)
@@ -13,8 +13,9 @@ router.get('/:awb', (req, res) => {
             })  
         } else {
             let jsonObject = JSON.parse(temp.substring(1,temp.length - 2)); 
+            let modified = jsonObject.scans.scans.reduce((acc, current) => [...acc, { location: current[2], detail: current[3], date: `${current[0]} ${current[1]}` }],[]);
             res.json({
-                result: jsonObject
+                result: modified
             })
         }
     })

@@ -23,7 +23,7 @@ app.use((req, res, next) => {
     next();
 })
 
-app.use('/ecom-express', ecom)
+app.use('/ecom', ecom)
 app.use('/ekart', ekart)
 app.use('/delhivery', delhivery)
 app.use('/xpressbees', xpressbees)

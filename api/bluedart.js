@@ -3,7 +3,7 @@ const router = express.Router();
 const FormData = require('form-data');
 const querystring = require('querystring');
 const request = require('request');
-var tabletojson = require('tabletojson');
+const tabletojson = require('tabletojson');
 
 
 router.get('/:awb', (req, response) => {
@@ -30,7 +30,7 @@ router.get('/:awb', (req, response) => {
         if(tabletojson.convert(body)[6][0][0] === "Status and Scans"){
         let final = tabletojson.convert(body)[6].reduce((acc, current, index) => {
             if(index > 2){
-                return [...acc, { location: current['0'], detail: current['1'], date: current['2'], time: current['3']}]
+                return [...acc, { location: current['0'], detail: current['1'], date: `${current['2']} ${current['3']}` }]
             }
             return acc;
         },[]);
