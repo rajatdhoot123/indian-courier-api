@@ -28,13 +28,14 @@ And then you will get Json Object with all tracking Details
 
 | Service Providers    | Api EndPoints                           |
 | :---                 |     :---:                               |
-| Ekart                | localhost:5050/ekart/${TrackingId}      |
-| Ecom                 | localhost:5050/ecom/${TrackingId}       | 
-| Delhivery            | localhost:5050/delhivery/${TrackingId}  | 
-| Xpressbees           | localhost:5050/xpressbees/${TrackingId} | 
-| Bluedart             | localhost:5050/bluedart/${TrackingId}   | 
+| Ekart                | localhost:5050/ekart/{TrackingId}      |
+| Ecom                 | localhost:5050/ecom/{TrackingId}       | 
+| Delhivery            | localhost:5050/delhivery/{TrackingId}  | 
+| Xpressbees           | localhost:5050/xpressbees/{TrackingId} | 
+| Bluedart             | localhost:5050/bluedart/{TrackingId}   | 
+| Gati                 | localhost:5050/gati/{TrackingId}   | 
 
-Tip: Directly insert tracking id in api end point instead of ${TrackingId}
+Tip: Directly insert tracking id in api end point instead of {TrackingId}
 
 ###### API Respone Format
 
