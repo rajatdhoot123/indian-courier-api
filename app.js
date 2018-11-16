@@ -13,6 +13,7 @@ let delhivery = require('./api/delhivery.js');
 let xpressbees = require('./api/xpressbees.js');
 let bluedart = require('./api/bluedart.js');
 let gati = require('./api/gati.js');
+let dtdc = require('./api/dtdc.js');
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
@@ -30,6 +31,7 @@ app.use('/delhivery', delhivery)
 app.use('/xpressbees', xpressbees)
 app.use('/bluedart', bluedart)
 app.use('/gati', gati)
+app.use('/dtdc', dtdc)
 
 app.use((req, res, next) => {
     const error = new Error('Not Found')

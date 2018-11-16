@@ -26,16 +26,18 @@ And then you will get Json Object with all tracking Details
 
 ###### Get Request
 
-| Service Providers    | Api EndPoints                           |
-| :---                 |     :---:                               |
+| Service Providers    | Api EndPoints                          |
+| :---                 |     :---:                              |
 | Ekart                | localhost:5050/ekart/{TrackingId}      |
 | Ecom                 | localhost:5050/ecom/{TrackingId}       | 
 | Delhivery            | localhost:5050/delhivery/{TrackingId}  | 
 | Xpressbees           | localhost:5050/xpressbees/{TrackingId} | 
 | Bluedart             | localhost:5050/bluedart/{TrackingId}   | 
-| Gati                 | localhost:5050/gati/{TrackingId}   | 
+| Gati                 | localhost:5050/gati/{TrackingId}       | 
+| DTDC                 | localhost:5050/dtdc/{TrackingId}       |
 
-Tip: Directly insert tracking id in api end point instead of {TrackingId}
+
+###### Tip: Directly insert tracking id in api end point instead of {TrackingId}
 
 ###### API Respone Format
 
@@ -59,10 +61,10 @@ courier_provider = ekart | ecom | delhivery | xpressbees | bluedart
 
 trackingId = Your Parcel Tracking id like-> FMPC0279658213
 
-https://desolate-retreat-95865.herokuapp.com/{courier_provider}/{trackingId}
+https://indian-courier-api.herokuapp.com/{courier_provider}/{trackingId}
 
 Replace courier_provider and trackingId in above api to get your tracking json response
 
 Example ->
 
-https://desolate-retreat-95865.herokuapp.com/ekart/FMPC0279658213
+https://indian-courier-api.herokuapp.com/ekart/FMPC0279658213
