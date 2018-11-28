@@ -10,7 +10,7 @@ router.get('/:awb', (req, res) => {
         if(response.data[0].activityType == "Invalid Data"){
             return res.json({ result: `Invalid Tracking No. ${trackingId}` })
         }
-        let final = response.data.reduce((acc, current) => [...acc, { location: `${current.origin}: ${current.activityType}`, detail: current.deliveryStatus, date: `${current.dateWithNoSuffix} ${current.time}` }],[]);
+        let final = response.data.reduce((acc, current) => [...acc, { location: `${current.origin}`, detail: `${current.activityType}`,  status: `${current.deliveryStatus}`, date: `${current.dateWithNoSuffix}`, time: `${current.time}` }],[]);
         return res.json({ result: final })
     })
     .catch(err => {
