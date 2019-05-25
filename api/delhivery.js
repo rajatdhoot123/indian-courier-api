@@ -4,7 +4,7 @@ const axios = require('axios')
 
 router.get('/:awb', (req, res) => {
     let trackingId = req.params.awb
-    axios.get(`https://uxxbqylwa3.execute-api.ap-southeast-1.amazonaws.com/prod/track?waybillId=${trackingId}`)
+    return axios.get(`https://uxxbqylwa3.execute-api.ap-southeast-1.amazonaws.com/prod/track?waybillId=${trackingId}`)
     .then(response => {
         if(!response.data.data[0].scans){
             return res.json({ result: `Invalid Tracking No. ${trackingId}` })

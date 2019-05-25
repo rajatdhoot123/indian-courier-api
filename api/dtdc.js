@@ -5,7 +5,7 @@ const axios = require('axios')
 
 router.get('/:awb', (req, res) => {
     let trackingId = req.params.awb
-    axios.get(`http://track.dtdc.com/ctbs-tracking/customerInterface.tr?submitName=getLoadMovementDetails&cnNo=${trackingId}`)
+    return axios.get(`http://track.dtdc.com/ctbs-tracking/customerInterface.tr?submitName=getLoadMovementDetails&cnNo=${trackingId}`)
     .then(response => {
         if(response.data[0].activityType == "Invalid Data"){
             return res.json({ result: `Invalid Tracking No. ${trackingId}` })

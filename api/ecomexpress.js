@@ -4,7 +4,7 @@ const axios = require('axios');
 //reduce((acc, current) => [...acc, { location: current.scannedLocation, detail: current.instructions, date: `${current.scanDateTime}` }],[]);
 router.get('/:awb', (req, res) => {
     let trackingId = req.params.awb
-    axios.get(`https://ecomexpress.in/tracking/?awb_field=${trackingId}`)
+    return axios.get(`https://ecomexpress.in/tracking/?awb_field=${trackingId}`)
     .then(response => {
         let temp = response.data.substring(response.data.lastIndexOf("<script>") + 23, response.data.lastIndexOf("if(response==='No Record Found'){")).trim();
         if (temp == "'No Record Found';"){

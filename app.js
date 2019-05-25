@@ -14,6 +14,8 @@ let xpressbees = require('./api/xpressbees.js');
 let bluedart = require('./api/bluedart.js');
 let gati = require('./api/gati.js');
 let dtdc = require('./api/dtdc.js');
+let shadowfax = require('./api/shadowfax.js');
+
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
@@ -32,6 +34,7 @@ app.use('/xpressbees', xpressbees)
 app.use('/bluedart', bluedart)
 app.use('/gati', gati)
 app.use('/dtdc', dtdc)
+app.use('/shadowfax', shadowfax)
 
 app.use((req, res, next) => {
     const error = new Error('Not Found')

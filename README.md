@@ -35,7 +35,7 @@ And then you will get Json Object with all tracking Details
 | Bluedart             | localhost:5050/bluedart/{TrackingId}   | 
 | Gati                 | localhost:5050/gati/{TrackingId}       | 
 | DTDC                 | localhost:5050/dtdc/{TrackingId}       |
-
+| Shadowfax            | localhost:5050/shadowfax/{TrackingId}  |
 
 ###### Tip: Directly insert tracking id in api end point instead of {TrackingId}
 
@@ -57,7 +57,7 @@ Example
 
 Now you can use directly heroku end point and get the tracking details as json response
 
-courier_provider = ekart | ecom | delhivery | xpressbees | bluedart
+courier_provider = ekart | ecom | delhivery | xpressbees | bluedart |  dtdc | gati | shadowfax
 
 trackingId = Your Parcel Tracking id like-> FMPC0279658213
 
