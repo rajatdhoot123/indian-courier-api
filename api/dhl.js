@@ -5,11 +5,9 @@ const axios = require('axios')
 
 router.get('/:awb', (req, res) => {
     let trackingId = req.params.awb
-	let url = `https://www.dhl.co.in/en/express/tracking.html?AWB=${trackingId}`;
-	console.log("axios url is"+url);
+    let url = `https://www.dhl.co.in/en/express/tracking.html?AWB=${trackingId}`;
     return axios.get(url)
     .then(response => {
-		console.log("data is"+response.data);
         if(response.data[0].activityType == "Invalid Data"){
             return res.json({ result: `Invalid Tracking No. ${trackingId}` })
         }
