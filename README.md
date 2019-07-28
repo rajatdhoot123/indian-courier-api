@@ -36,6 +36,7 @@ And then you will get Json Object with all tracking Details
 | Gati                 | localhost:5050/gati/{TrackingId}       | 
 | DTDC                 | localhost:5050/dtdc/{TrackingId}       |
 | Shadowfax            | localhost:5050/shadowfax/{TrackingId}  |
+| DHL                  | localhost:5050/dhl/{TrackingId}        |
 
 ###### Tip: Directly insert tracking id in api end point instead of {TrackingId}
 

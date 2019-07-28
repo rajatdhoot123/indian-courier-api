@@ -15,6 +15,7 @@ let bluedart = require('./api/bluedart.js');
 let gati = require('./api/gati.js');
 let dtdc = require('./api/dtdc.js');
 let shadowfax = require('./api/shadowfax.js');
+let dhl = require('./api/dhl.js');
 
 
 app.use((req, res, next) => {
@@ -35,6 +36,7 @@ app.use('/bluedart', bluedart)
 app.use('/gati', gati)
 app.use('/dtdc', dtdc)
 app.use('/shadowfax', shadowfax)
+app.use('/dhl', dhl)
 
 app.use((req, res, next) => {
     const error = new Error('Not Found')
