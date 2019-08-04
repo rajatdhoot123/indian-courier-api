@@ -26,17 +26,19 @@ And then you will get Json Object with all tracking Details
 
 ###### Get Request
 
-| Service Providers    | Api EndPoints                          |
-| :---                 |     :---:                              |
-| Ekart                | localhost:5050/ekart/{TrackingId}      |
-| Ecom                 | localhost:5050/ecom/{TrackingId}       | 
-| Delhivery            | localhost:5050/delhivery/{TrackingId}  | 
-| Xpressbees           | localhost:5050/xpressbees/{TrackingId} | 
-| Bluedart             | localhost:5050/bluedart/{TrackingId}   | 
-| Gati                 | localhost:5050/gati/{TrackingId}       | 
-| DTDC                 | localhost:5050/dtdc/{TrackingId}       |
-| Shadowfax            | localhost:5050/shadowfax/{TrackingId}  |
-| DHL                  | localhost:5050/dhl/{TrackingId}        |
+| Service Providers    | Api EndPoints                                  |
+| :---                 |     :---:                                      |
+| Ekart                | localhost:5050/ekart/{TrackingId}              |
+| Ecom                 | localhost:5050/ecom/{TrackingId}               | 
+| Delhivery            | localhost:5050/delhivery/{TrackingId}          | 
+| Xpressbees           | localhost:5050/xpressbees/{TrackingId}         | 
+| Bluedart             | localhost:5050/bluedart/{TrackingId}           | 
+| Gati                 | localhost:5050/gati/{TrackingId}               |    
+| DTDC                 | localhost:5050/dtdc/{TrackingId}               |
+| Shadowfax            | localhost:5050/shadowfax/{TrackingId}          |
+| DHL                  | localhost:5050/dhl/{TrackingId}                |
+| Maruti(Beta)         | localhost:5050/dhl/{TrackingId} (Premium)      | 
+
 
 ###### Tip: Directly insert tracking id in api end point instead of {TrackingId}
 
