@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const tabletojson = require('tabletojson');
+const tabletojson = require('tabletojson').Tabletojson;
 
 let url = 'https://www.ekartlogistics.com/track/';
 
