@@ -1,4 +1,4 @@
-# Indian Courier Tracking Service API 
+# Indian Courier Tracking Service API
 
 ## Getting Started
 
@@ -8,11 +8,11 @@ You can use this project to build your courier tracking app as it return the res
 
 ### How to Start
 
--->You can download zip or git clone https://github.com/rajatdhoot123/indian-courier-api.git 
+-->You can download zip or git clone https://github.com/rajatdhoot123/indian-courier-api.git
 
--->You can install all dependency by running command on bash(Terminal):   npm install
+-->You can install all dependency by running command on bash(Terminal): npm install
 
--->Then run:  yarn start or npm start
+-->Then run: yarn start or npm start
 
 -->Then Open Browser and hit url mentioned below like
 
@@ -24,21 +24,33 @@ And then you will get Json Object with all tracking Details
 
 #### Current Supported Courier service and their endpoints
 
-###### Get Request
+| Service Providers |               Status                      |
+| :---------------- | :---------------------------------------: |
+| Ekart             |               Working                     |
+| Ecom              |               Working                     |
+| Delhivery         |               Working                     |
+| Xpressbees        |                 NA                        |
+| Bluedart          |   Some tech limitation need to figure out |
+| Gati              |                 NA                        |
+| DTDC              |               Working                     |
+| Shadowfax         |                 NA                        |
+| DHL               |               Working                     |
+| Maruti(Beta)      |                 NA                        |
 
-| Service Providers    | Api EndPoints                                  |
-| :---                 |     :---:                                      |
-| Ekart                | localhost:5050/ekart/{TrackingId}              |
-| Ecom                 | localhost:5050/ecom/{TrackingId}               | 
-| Delhivery            | localhost:5050/delhivery/{TrackingId}          | 
-| Xpressbees           | localhost:5050/xpressbees/{TrackingId}         | 
-| Bluedart             | localhost:5050/bluedart/{TrackingId}           | 
-| Gati                 | localhost:5050/gati/{TrackingId}               |    
-| DTDC                 | localhost:5050/dtdc/{TrackingId}               |
-| Shadowfax            | localhost:5050/shadowfax/{TrackingId}          |
-| DHL                  | localhost:5050/dhl/{TrackingId}                |
-| Maruti(Beta)         | localhost:5050/dhl/{TrackingId} (Premium)      | 
 
+
+<!-- | Service Providers |               Api EndPoints               |
+| :---------------- | :---------------------------------------: |
+| Ekart             |     localhost:5050/ekart/{TrackingId}     |
+| Ecom              |     localhost:5050/ecom/{TrackingId}      |
+| Delhivery         |   localhost:5050/delhivery/{TrackingId}   |
+| Xpressbees        |  localhost:5050/xpressbees/{TrackingId}   |
+| Bluedart          |   localhost:5050/bluedart/{TrackingId}    |
+| Gati              |     localhost:5050/gati/{TrackingId}      |
+| DTDC              |     localhost:5050/dtdc/{TrackingId}      |
+| Shadowfax         |   localhost:5050/shadowfax/{TrackingId}   |
+| DHL               |      localhost:5050/dhl/{TrackingId}      |
+| Maruti(Beta)      | localhost:5050/dhl/{TrackingId} (Premium) | -->
 
 ###### Tip: Directly insert tracking id in api end point instead of {TrackingId}
 
@@ -48,6 +60,7 @@ If your request is successfull then response will contain three keys i.e. locati
 Check the example below.
 
 Example
+
 ```
     {
         "location": "BENGALURU",
@@ -60,14 +73,14 @@ Example
 
 Now you can use directly heroku end point and get the tracking details as json response
 
-courier_provider = ekart | ecom | delhivery | xpressbees | bluedart |  dtdc | gati | shadowfax
+courier_provider = ekart | ecom | delhivery | xpressbees | bluedart | dtdc | gati | shadowfax
 
 trackingId = Your Parcel Tracking id like-> FMPC0279658213
 
-https://indian-courier-api.herokuapp.com/{courier_provider}/{trackingId}
+https://indian-courier-api-premium.vercel.app/api/{courier_provider}/{trackingId}
 
 Replace courier_provider and trackingId in above api to get your tracking json response
 
 Example ->
 
-https://indian-courier-api.herokuapp.com/ekart/FMPC0279658213
+https://indian-courier-api-premium.vercel.app/api/ekart/FMPC0279658213
