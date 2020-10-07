@@ -1,5 +1,7 @@
 # Indian Courier Tracking Service API
 
+V2 Version is in Progress
+
 ## Getting Started
 
 This project is based on nodejs help to track the courier servies provider in India.
@@ -24,20 +26,18 @@ And then you will get Json Object with all tracking Details
 
 #### Current Supported Courier service and their endpoints
 
-| Service Providers |               Status                      |
-| :---------------- | :---------------------------------------: |
-| Ekart             |               Working                     |
-| Ecom              |               Working                     |
-| Delhivery         |               Working                     |
-| Xpressbees        |                 NA                        |
-| Bluedart          |   Some tech limitation need to figure out |
-| Gati              |                 NA                        |
-| DTDC              |               Working                     |
-| Shadowfax         |                 NA                        |
-| DHL               |               Working                     |
-| Maruti(Beta)      |                 NA                        |
-
-
+| Service Providers | Status  |
+| :---------------- | :-----: |
+| Ekart             | Working |
+| Ecom              | Working |
+| Delhivery         | Working |
+| Xpressbees        |   NA    |
+| Bluedart          | Working |
+| Gati              |   NA    |
+| DTDC              | Working |
+| Shadowfax         |   NA    |
+| DHL               | Working |
+| Maruti(Beta)      | Working |
 
 <!-- | Service Providers |               Api EndPoints               |
 | :---------------- | :---------------------------------------: |
@@ -84,3 +84,6 @@ Replace courier_provider and trackingId in above api to get your tracking json r
 Example ->
 
 https://indian-courier-api-premium.vercel.app/api/ekart/FMPC0279658213
+
+
+@rrjanbiah Thanks for helping in adding more and more vendors
