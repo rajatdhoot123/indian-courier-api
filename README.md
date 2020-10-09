@@ -2,6 +2,10 @@
 
 V2 Version is in Progress
 
+## Track your Parcels directly here (Still WIP)
+
+--> https://indian-courier-api-premium.vercel.app
+
 ## Getting Started
 
 This project is based on nodejs help to track the courier servies provider in India.
@@ -38,19 +42,6 @@ And then you will get Json Object with all tracking Details
 | Shadowfax         |   NA    |
 | DHL               | Working |
 | Maruti(Beta)      | Working |
-
-<!-- | Service Providers |               Api EndPoints               |
-| :---------------- | :---------------------------------------: |
-| Ekart             |     localhost:5050/ekart/{TrackingId}     |
-| Ecom              |     localhost:5050/ecom/{TrackingId}      |
-| Delhivery         |   localhost:5050/delhivery/{TrackingId}   |
-| Xpressbees        |  localhost:5050/xpressbees/{TrackingId}   |
-| Bluedart          |   localhost:5050/bluedart/{TrackingId}    |
-| Gati              |     localhost:5050/gati/{TrackingId}      |
-| DTDC              |     localhost:5050/dtdc/{TrackingId}      |
-| Shadowfax         |   localhost:5050/shadowfax/{TrackingId}   |
-| DHL               |      localhost:5050/dhl/{TrackingId}      |
-| Maruti(Beta)      | localhost:5050/dhl/{TrackingId} (Premium) | -->
 
 ###### Tip: Directly insert tracking id in api end point instead of {TrackingId}
 
