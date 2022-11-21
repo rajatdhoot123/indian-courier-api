@@ -56,20 +56,12 @@ Example
     },
 ```
 
-### Deployed on Heroku
-
-Now you can use directly heroku end point and get the tracking details as json response
+### API RUN OVER AFTERSHIP
 
 courier_provider = ekart | ecom | delhivery | xpressbees | bluedart | dtdc | gati | shadowfax
 
 trackingId = Your Parcel Tracking id like-> FMPC0279658213
 
-https://84g9wt0xab.execute-api.ap-south-1.amazonaws.com/v1/api/{courier_provider}/{trackingId}
+http://localhost:3000/{courier_provider}/{trackingId}
 
-#### For api key kindly contact me mail id rajatdhoot123@gmail.com
 
-Replace courier_provider and trackingId in above api to get your tracking json response
-
-Example ->
-
-https://84g9wt0xab.execute-api.ap-south-1.amazonaws.com/v1/api/ekart/FMPC0279658213
