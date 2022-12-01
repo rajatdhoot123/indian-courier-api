@@ -62,6 +62,6 @@ courier_provider = ekart | ecom | delhivery | xpressbees | bluedart | dtdc | gat
 
 trackingId = Your Parcel Tracking id like-> FMPC0279658213
 
-http://localhost:3000/{courier_provider}/{trackingId}
+http://localhost:3000/api/track/{courier_provider}/{trackingId}
 
 
